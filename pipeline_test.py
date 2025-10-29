@@ -1,6 +1,7 @@
 import analyzer_pipeline
 import glob
 
+debug = True
 
 def main():
     """Runs the full test process."""
@@ -8,10 +9,10 @@ def main():
     print("Starting pipeline test...")
     
     # 2. Use the 'prep_videos' function FROM your library
-    video_files = analyzer_pipeline.prep_videos("./my_videos")
+    video_files = analyzer_pipeline.prep_videos("./walking_videos")
     
     if not video_files:
-        print("No videos found in './my_videos' folder. Aborting.")
+        print("No videos found in './walking_videos' folder. Aborting.")
         return
 
     # 3. Loop through the files and use the main class

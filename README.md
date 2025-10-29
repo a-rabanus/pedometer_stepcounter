@@ -1,5 +1,8 @@
 # Pedometer Ground Truth Pipeline
 
+# IMPORTANT!
+Mediapipe only supports python 3.12 or lower!
+
 ## 1\. Description
 
 This Python library analyzes video files of a person walking to extract ground truth data for pedometer algorithm validation. It identifies individual steps and tracks the 3D movement of specified joints (like a wrist or ankle) over time.

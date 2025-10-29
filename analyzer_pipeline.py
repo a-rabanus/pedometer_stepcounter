@@ -263,7 +263,8 @@ def compile_all_steps(step_timestamps, start_frame, end_frame, fps):
         "step_timestamps": step_timestamps
     }
 
-
+def prep_videos(dir_path):
+    return glob.glob(f"{dir_path}/*.mp4")
 
 class PedometerGroundTruth:
     def __init__(self, video_path):
